@@ -1,0 +1,11 @@
+{
+  "skills": ["likec4-architecture"],
+  "query": "Create a new LikeC4 architecture model for an e-commerce platform with context and container views.",
+  "expected_behavior": [
+    "Creates or updates LikeC4 model files (.c4 or .likec4)",
+    "Defines systems/containers with explicit relationships",
+    "Includes at least context and container views",
+    "Runs or reports npx likec4 validate",
+    "Returns npx likec4 start preview command"
+  ]
+}

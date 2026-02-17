@@ -1,0 +1,10 @@
+{
+  "skills": ["likec4-architecture"],
+  "query": "Export architecture artifacts for docs and CI publishing.",
+  "expected_behavior": [
+    "Confirms model validity before export",
+    "Provides static build command (npx likec4 build -o ./dist)",
+    "Provides image export command (npx likec4 export png -o ./assets/architecture)",
+    "Does not introduce unrelated model changes"
+  ]
+}
