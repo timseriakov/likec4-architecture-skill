@@ -13,20 +13,25 @@ Creates and updates LikeC4 architecture models that stay executable and reviewab
 - Identify system boundary and audience.
 - Start with context and container views unless a different view set is requested.
 
-2. Locate model files:
-- Reuse existing `.c4`/`.likec4` files when present.
-- If missing, bootstrap from `assets/likec4-starter/docs/architecture/model.c4`.
+2. Load DSL guidance before editing:
+- If building from scratch or changing notation, read `references/likec4-dsl-quickstart.md` first.
+- If choosing architecture shape, read `references/likec4-patterns.md`.
+- If feature usage is unclear, check `references/likec4-capabilities-reference.md` and follow official docs links.
 
-3. Model structure before visuals:
+3. Locate or bootstrap model files:
+- Reuse existing `.c4`/`.likec4` files when present.
+- If missing, copy starter from `assets/likec4-starter/docs/architecture/model.c4` to project `docs/architecture/model.c4`.
+
+4. Model structure before visuals:
 - Define stable element IDs and meaningful names.
 - Add explicit directional relationships with short labels.
 - Add technology/description fields where useful.
 
-4. Keep views focused:
+5. Keep views focused:
 - Create small, purposeful views.
 - Split crowded diagrams by domain, team, or bounded context.
 
-5. Validate and package:
+6. Validate and package:
 - Run `npx likec4 validate` and fix all errors.
 - Provide `npx likec4 start` preview command.
 - If requested, provide build/export commands.
@@ -58,7 +63,9 @@ When architecture files change, return:
 
 ## References
 
+- DSL quickstart: `references/likec4-dsl-quickstart.md`
+- Architecture patterns: `references/likec4-patterns.md`
+- Capabilities map: `references/likec4-capabilities-reference.md`
 - Checklist: `references/likec4-checklist.md`
 - Examples: `references/examples.md`
 - Starter template: `assets/likec4-starter/docs/architecture/model.c4`
-- Bootstrap helper: `scripts/bootstrap_likec4_starter.sh`

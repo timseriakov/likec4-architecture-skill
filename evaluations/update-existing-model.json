@@ -3,6 +3,7 @@
   "query": "Update existing architecture to include a background worker and message queue.",
   "expected_behavior": [
     "Finds and updates existing model instead of recreating from scratch",
+    "Uses references/likec4-patterns.md when shaping async/messaging flows",
     "Adds new elements and directional relationships",
     "Keeps existing stable identifiers where possible",
     "Revalidates with LikeC4 CLI",

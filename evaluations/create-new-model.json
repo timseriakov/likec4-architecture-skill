@@ -2,6 +2,7 @@
   "skills": ["likec4-architecture"],
   "query": "Create a new LikeC4 architecture model for an e-commerce platform with context and container views.",
   "expected_behavior": [
+    "Reads DSL guidance from references/likec4-dsl-quickstart.md before creating a model from scratch",
     "Creates or updates LikeC4 model files (.c4 or .likec4)",
     "Defines systems/containers with explicit relationships",
     "Includes at least context and container views",
