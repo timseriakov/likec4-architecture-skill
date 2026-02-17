@@ -1,6 +1,24 @@
 # likec4-architecture-skill
 
-Reusable Agent Skill for architecture-as-code workflows with [LikeC4](https://likec4.dev/).
+Agent Skill for architecture-as-code workflows with [LikeC4](https://likec4.dev/).
+
+## Installation
+
+### Option 1: Vercel Skills (`npx skills`)
+
+```sh
+npx skills add timseriakov/likec4-architecture-skill
+```
+
+### Option 2: Context7 Skills (`ctx7 skills`)
+
+```sh
+# inspect available skills in this repo
+npx ctx7 skills info /timseriakov/likec4-architecture-skill
+
+# install this skill
+npx ctx7 skills install /timseriakov/likec4-architecture-skill likec4-architecture --universal
+```
 
 ## What this skill does
 
