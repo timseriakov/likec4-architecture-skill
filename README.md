@@ -30,21 +30,21 @@ npx ctx7 skills install /timseriakov/likec4-architecture-skill likec4-architectu
 
 ## Skill structure
 
-- `SKILL.md` - core instructions and trigger metadata
-- `references/likec4-dsl-quickstart.md` - syntax and minimal examples
-- `references/likec4-patterns.md` - practical architecture templates
-- `references/likec4-capabilities-reference.md` - capability map + official docs index
-- `references/likec4-checklist.md` - quality checklist
-- `references/examples.md` - concrete usage examples
-- `assets/likec4-starter/docs/architecture/model.c4` - starter model
-- `agents/openai.yaml` - optional UI metadata
+- `likec4-architecture/SKILL.md` - core instructions and trigger metadata
+- `likec4-architecture/references/likec4-dsl-quickstart.md` - syntax and minimal examples
+- `likec4-architecture/references/likec4-patterns.md` - practical architecture templates
+- `likec4-architecture/references/likec4-capabilities-reference.md` - capability map + official docs index
+- `likec4-architecture/references/likec4-checklist.md` - quality checklist
+- `likec4-architecture/references/examples.md` - concrete usage examples
+- `likec4-architecture/assets/likec4-starter/docs/architecture/model.c4` - starter model
+- `likec4-architecture/agents/openai.yaml` - optional UI metadata
 
 ## Quick use
 
 ```sh
 # copy starter model into current project
 mkdir -p ./docs/architecture
-cp ./assets/likec4-starter/docs/architecture/model.c4 ./docs/architecture/model.c4
+cp ./likec4-architecture/assets/likec4-starter/docs/architecture/model.c4 ./docs/architecture/model.c4
 
 # validate
 npx likec4 validate
