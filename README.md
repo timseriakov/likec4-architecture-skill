@@ -63,14 +63,6 @@ The skill also includes a starter model and a bootstrap helper:
 
 ## Related Projects and Links
 
-Ataraxy Labs ecosystem and CLI tools:
-
-- Ataraxy Labs (org): https://github.com/Ataraxy-Labs
-- Ataraxy Labs (site): https://ataraxy-labs.com/
-- sem: https://github.com/ataraxy-labs/sem
-- inspect: https://github.com/ataraxy-labs/inspect
-- weave: https://github.com/ataraxy-labs/weave
-
 LikeC4 links:
 
 - LikeC4 site: https://likec4.dev/
