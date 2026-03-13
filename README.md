@@ -61,6 +61,22 @@ The skill also includes a starter model and a bootstrap helper:
 - `likec4-architecture/assets/likec4-starter/docs/architecture/model.c4`
 - `likec4-architecture/scripts/bootstrap_likec4_starter.sh`
 
+## Related Projects and Links
+
+Ataraxy Labs ecosystem and CLI tools:
+
+- Ataraxy Labs (org): https://github.com/Ataraxy-Labs
+- Ataraxy Labs (site): https://ataraxy-labs.com/
+- sem: https://github.com/ataraxy-labs/sem
+- inspect: https://github.com/ataraxy-labs/inspect
+- weave: https://github.com/ataraxy-labs/weave
+
+LikeC4 links:
+
+- LikeC4 site: https://likec4.dev/
+- LikeC4 repo: https://github.com/likec4/likec4
+- LikeC4 org: https://github.com/likec4
+
 ## License
 
 MIT
