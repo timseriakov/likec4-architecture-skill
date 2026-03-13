@@ -13,6 +13,20 @@ This repository contains a single skill directory:
 
 ## Install
 
+### Option 1: via Vercel `skills` CLI (`npx skills`)
+
+```bash
+npx skills add timseriakov/likec4-architecture-skill --skill likec4-architecture
+```
+
+Use `--list` first if you want to inspect detected skills before installing.
+
+```bash
+npx skills add timseriakov/likec4-architecture-skill --list
+```
+
+### Option 2: manual clone/copy
+
 Agent-skill hosts (OpenCode, Codex CLI, Gemini CLI, etc.) typically discover skills under:
 
 - `~/.agents/skills/<skill-name>/SKILL.md`
