@@ -1,61 +1,51 @@
 # likec4-architecture-skill
 
-Agent Skill for architecture-as-code workflows with [LikeC4](https://likec4.dev/).
+Portable Agent Skill for architecture-as-code workflows with LikeC4.
 
-## Installation
+This repository contains a single skill directory:
 
-### Option 1: Vercel Skills (`npx skills`)
+- `likec4-architecture/`
 
-```sh
-npx skills add timseriakov/likec4-architecture-skill
+## Prerequisites
+
+- Node.js (v18+ recommended)
+- LikeC4 CLI available via `npx`
+
+## Install
+
+Agent-skill hosts (OpenCode, Codex CLI, Gemini CLI, etc.) typically discover skills under:
+
+- `~/.agents/skills/<skill-name>/SKILL.md`
+
+Since this repo name is not the same as the skill name, install by copying the skill folder.
+
+```bash
+git clone https://github.com/timseriakov/likec4-architecture-skill.git /tmp/likec4-architecture-skill
+rm -rf ~/.agents/skills/likec4-architecture
+cp -R /tmp/likec4-architecture-skill/likec4-architecture ~/.agents/skills/likec4-architecture
 ```
 
-### Option 2: Context7 Skills (`ctx7 skills`)
+Verify:
 
-```sh
-# inspect available skills in this repo
-npx ctx7 skills info /timseriakov/likec4-architecture-skill
-
-# install this skill
-npx ctx7 skills install /timseriakov/likec4-architecture-skill likec4-architecture --universal
+```bash
+test -f ~/.agents/skills/likec4-architecture/SKILL.md && echo "ok"
 ```
 
-## What this skill does
+## Usage
 
-- Creates and updates LikeC4 models (`.c4`/`.likec4`)
-- Includes DSL quickstart and architecture patterns for model authoring
-- Enforces validation-first workflow (`npx likec4 validate`)
-- Produces preview/build/export commands for delivery
-- Includes starter model template
+Typical commands:
 
-## Skill structure
-
-- `likec4-architecture/SKILL.md` - core instructions and trigger metadata
-- `likec4-architecture/references/likec4-dsl-quickstart.md` - syntax and minimal examples
-- `likec4-architecture/references/likec4-patterns.md` - practical architecture templates
-- `likec4-architecture/references/likec4-capabilities-reference.md` - capability map + official docs index
-- `likec4-architecture/references/likec4-checklist.md` - quality checklist
-- `likec4-architecture/references/examples.md` - concrete usage examples
-- `likec4-architecture/assets/likec4-starter/docs/architecture/model.c4` - starter model
-- `likec4-architecture/agents/openai.yaml` - optional UI metadata
-
-## Quick use
-
-```sh
-# copy starter model into current project
-mkdir -p ./docs/architecture
-cp ./likec4-architecture/assets/likec4-starter/docs/architecture/model.c4 ./docs/architecture/model.c4
-
-# validate
+```bash
 npx likec4 validate
-
-# preview
 npx likec4 start
+npx likec4 build -o ./dist
+npx likec4 export png -o ./assets/architecture
 ```
 
-## Evaluations
+The skill also includes a starter model and a bootstrap helper:
 
-See `evaluations/` for example evaluation scenarios to test behavior quality.
+- `likec4-architecture/assets/likec4-starter/docs/architecture/model.c4`
+- `likec4-architecture/scripts/bootstrap_likec4_starter.sh`
 
 ## License
 
